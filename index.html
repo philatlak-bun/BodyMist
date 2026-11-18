@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Scent | ความหอมที่ใช่... ในทุกโมเมนต์ที่เป็นคุณ</title>
+  <meta name="description" content="Body Scent น้ำหอมฉีดตัวและโรลออน 4 อารมณ์กลิ่น Fresh, Sweet, Confident และ Romance ความหอมที่ใช่ ในทุกโมเมนต์ที่เป็นคุณ">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ปรับเฉพาะหน้าแรก: hero เต็มจอ */
+    .hero--full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px);
+      min-height: calc(100svh - 80px);
+      padding: var(--space-6) 0;
+    }
+
+    .hero__brand {
+      display: block;
+      margin-bottom: var(--space-3);
+      font-family: var(--font-serif);
+      font-size: 0.4em;
+      font-weight: 500;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--color-accent-dark);
+    }
+
+    .hero--full h1 {
+      line-height: 1.5;
+    }
+
+    .mood-card {
+      display: block;
+    }
+
+    .mood-card .mood-icon {
+      margin-bottom: var(--space-1);
+    }
+
+    .mood-card h3 {
+      margin-top: var(--space-1);
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .site-header { position: static; }
+      .hero--full {
+        min-height: calc(100vh - 120px);
+        min-height: calc(100svh - 120px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo">Body Scent</a>
+      <nav class="nav">
+        <a href="index.html" class="is-active">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--full">
+      <div class="container">
+        <span class="eyebrow">Body Mist &amp; Roll-on</span>
+        <h1>
+          <span class="hero__brand">Body Scent</span>
+          ความหอมที่ใช่...<br>ในทุกโมเมนต์ที่เป็นคุณ
+        </h1>
+        <hr class="divider">
+        <p class="lead">เลือกกลิ่นที่เล่าตัวตนของคุณ จาก 4 อารมณ์ที่แตกต่าง</p>
+        <a href="product.html" class="btn">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <!-- Moods -->
+    <section class="section section--white" id="moods">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Choose Your Mood</span>
+          <h2>เลือกกลิ่นตามอารมณ์ของคุณ</h2>
+          <hr class="divider">
+        </div>
+
+        <div class="mood-list">
+          <a href="product.html?mood=fresh" class="mood-card mood-fresh">
+            <span class="mood-icon" aria-hidden="true"></span>
+            <h3>Fresh</h3>
+            <span class="mood-underline mood-underline--center"></span>
+            <p>เปิดรับพลังงานบวกในทุกๆ วันด้วยกลิ่นหอมสะอาด โปร่งสบาย ให้ความรู้สึกตื่นตัวและเฟรชได้ตลอดวัน</p>
+          </a>
+
+          <a href="product.html?mood=sweet" class="mood-card mood-sweet">
+            <span class="mood-icon" aria-hidden="true"></span>
+            <h3>Sweet</h3>
+            <span class="mood-underline mood-underline--center"></span>
+            <p>เติมเต็มความอ่อนโยนและรอยยิ้มแสนน่ารัก ด้วยกลิ่นหวานแผ่วเบาที่อบอุ่นและสบายใจทุกครั้งที่ได้กลิ่น</p>
+          </a>
+
+          <a href="product.html?mood=confident" class="mood-card mood-confident">
+            <span class="mood-icon" aria-hidden="true"></span>
+            <h3>Confident</h3>
+            <span class="mood-underline mood-underline--center"></span>
+            <p>สะท้อนบุคลิกภาพที่นิ่ง สง่างาม และน่าเชื่อถือ พร้อมเติมเต็มความมั่นใจให้คุณพร้อมลุยทุกสถานการณ์</p>
+          </a>
+
+          <a href="product.html?mood=romance" class="mood-card mood-romance">
+            <span class="mood-icon" aria-hidden="true"></span>
+            <h3>Romance</h3>
+            <span class="mood-underline mood-underline--center"></span>
+            <p>สร้างความประทับใจที่ไม่รู้ลืมด้วยกลิ่นหอมเย้ายวนชวนหลงใหล ที่แฝงเสน่ห์ลึกซึ้งและอบอุ่นในคราวเดียวกัน</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="logo">Body Scent</div>
+      <nav class="footer-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+      <p class="footer-note">&copy; 2026 Body Scent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
